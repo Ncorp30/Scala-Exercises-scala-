@@ -42,7 +42,7 @@ class OptionTSpec extends RefSpec with Checkers {
     )
   }
 
-  def `OptionT methods` = {
+  def `OptionT methods - sequence transformations` = {
     check(
       Test.testSuccess(
         OptionTSection.optionTMethods _,
