@@ -16,8 +16,6 @@
 
 package catslib
 
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.flatspec.AnyFlatSpec
 import ApplyHelpers._
 
 import cats._
