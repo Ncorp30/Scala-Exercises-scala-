@@ -18,9 +18,6 @@ package catslib
 
 import cats.implicits._
 
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.flatspec.AnyFlatSpec
-
 object EitherStyle {
   def parse(s: String): Either[NumberFormatException, Int] =
     if (s.matches("-?[0-9]+")) Either.right(s.toInt)
@@ -94,7 +91,7 @@ object EitherStyleWithAdts {
  * @param name
  *   either
  */
-object EitherSection extends AnyFlatSpec with Matchers with org.scalaexercises.definitions.Section {
+object EitherSection extends org.scalaexercises.definitions.Section {
 
   /**
    * More often than not we want to just bias towards one side and call it a day - by convention,

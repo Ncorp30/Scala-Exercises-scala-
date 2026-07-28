@@ -16,9 +16,6 @@
 
 package catslib
 
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.flatspec.AnyFlatSpec
-
 import cats._
 import cats.implicits._
 
@@ -33,9 +30,7 @@ import cats.implicits._
  *   applicative
  */
 object ApplicativeSection
-    extends AnyFlatSpec
-    with Matchers
-    with org.scalaexercises.definitions.Section {
+    extends org.scalaexercises.definitions.Section {
 
   /**
    * This method takes any value and returns the value in the context of the functor. For many
